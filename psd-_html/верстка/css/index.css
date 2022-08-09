@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "Cera Pro";
+    src: url("../fonts/TTNormsPro-Light.ttf") format("opentype");
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Cera Pro";
+}
+
+.main-window{
+    background-image: url(../images/BlackWhite.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-color: #1f242d;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-position: right;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.description-main h1{
+    font-weight: bold;
+    font-size: 28px;
+}
+.description-main{
+    color:#fff;
+    padding-bottom: 40px;
+}
+.description-main p{
+    font-size: 20px;
+}
+section{
+    color:#1f242d;
+    background-color:blanchedalmond;
+    text-align: center;
+    padding: 80px 20px 80px;
+}
+.section-images{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.section-images div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-images div{
+    margin-top: 20px;
+}
+footer{
+    background-color: #1f242d;
+    color:#fff;
+    padding: 50px 20px 20px;
+}
+.bottom-footer{
+    background-color: #1f242d;
+    color:#fff;
+    padding: 20px 20px 50px;
+    border-top: 2px solid #fff;
+}
+
+footer h2{
+    font-weight: bolder;
+    font-size: 24px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    margin-top: 10px;
+    height: 25px;
+    outline: none;
+}
+form input::placeholder{
+    color:silver;
+}
+form textarea::placeholder{
+    color:silver;
+}
+form textarea{
+    margin-top: 10px;
+}
+form .check{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px 0px;
+}
+form .check label{
+    margin-left: 10px;
+}
+form button{
+    background-color:transparent;
+    color:#fff;
+    font-size: 24px;
+    border:none;
+    text-align: left;
+}
+.menu{
+    position: fixed;
+    background-color: #1f242d;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    box-sizing:border-box;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .2s;
+    overflow: hidden;
+}
+.menu header{
+    display: flex;
+}
+.menu a{
+    color:#fff;
+    text-decoration: none;
+}
+.main-menu{
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+}
+.lang-menu{
+    display: none;
+}
+.close{
+    color:#fff;
+    font-size: 36px;
+    cursor: pointer;
+}

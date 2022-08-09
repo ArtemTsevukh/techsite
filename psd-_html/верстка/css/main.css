@@ -1,0 +1,74 @@
+@media (min-width: 540px){
+    .section-images{
+        grid-template-columns: 33% 33% 33%;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .bottom-footer{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .bottom-footer h4+h4{
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 960px){
+    .icon-burger{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        background-color: transparent;
+        justify-content: space-between;
+        padding: 20px;
+        position: relative;
+        width: auto;
+        flex-direction: row;
+    }
+    .main-menu{
+        flex-direction: row;
+        font-size: 18px;
+    }
+    .main-menu span+span{
+        margin-left: 30px;
+    }
+    .menu header{
+        display: none;
+    }
+    .lang-menu{
+        display: block;
+        margin-left: 300px;
+    }
+    .description-main h1{
+        max-width: 600px;
+        font-size: 36px;
+    }
+    .description-main p{
+        max-width: 800px;
+    }
+    .section-images{
+        display: flex;
+        justify-content: space-between;
+    }
+    form .top-form input{
+        width: 48%;
+    }
+    form .top-form{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .checked{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
